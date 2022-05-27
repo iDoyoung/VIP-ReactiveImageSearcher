@@ -15,9 +15,23 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6me-b8-WmG">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6me-b8-WmG" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="46i-9y-CdJ"/>
+                            <constraint firstItem="6me-b8-WmG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Mxm-2P-Zym"/>
+                            <constraint firstItem="6me-b8-WmG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="NkI-fN-SQl"/>
+                            <constraint firstItem="6me-b8-WmG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="XOx-Rb-Bmn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="6me-b8-WmG" id="ExR-l6-Qbz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
