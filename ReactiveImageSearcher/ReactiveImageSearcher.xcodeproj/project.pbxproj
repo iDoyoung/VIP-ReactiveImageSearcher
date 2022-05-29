@@ -16,6 +16,8 @@
 		7FA2A0662840D7ED00413275 /* ReactiveImageSearcherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0652840D7ED00413275 /* ReactiveImageSearcherTests.swift */; };
 		7FA2A0702840D7ED00413275 /* ReactiveImageSearcherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A06F2840D7ED00413275 /* ReactiveImageSearcherUITests.swift */; };
 		7FA2A0722840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0712840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift */; };
+		7FA2A0FE2841F00F00413275 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FD2841F00F00413275 /* Endpoint.swift */; };
+		7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FF2843252200413275 /* NetworkConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7FA2A06B2840D7ED00413275 /* ReactiveImageSearcherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactiveImageSearcherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA2A06F2840D7ED00413275 /* ReactiveImageSearcherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcherUITests.swift; sourceTree = "<group>"; };
 		7FA2A0712840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7FA2A0FD2841F00F00413275 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		7FA2A0FF2843252200413275 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 		7FA2A04D2840D7EC00413275 /* ReactiveImageSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				7FA2A0FA2840F33900413275 /* Network */,
 				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
 				7FA2A0502840D7EC00413275 /* SceneDelegate.swift */,
 				7FA2A0522840D7EC00413275 /* ViewController.swift */,
@@ -125,6 +130,15 @@
 				7FA2A0712840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift */,
 			);
 			path = ReactiveImageSearcherUITests;
+			sourceTree = "<group>";
+		};
+		7FA2A0FA2840F33900413275 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2A0FD2841F00F00413275 /* Endpoint.swift */,
+				7FA2A0FF2843252200413275 /* NetworkConfig.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +272,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA2A0FE2841F00F00413275 /* Endpoint.swift in Sources */,
 				7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */,
 				7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */,
+				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
