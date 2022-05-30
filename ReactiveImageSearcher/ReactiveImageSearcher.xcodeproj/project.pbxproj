@@ -18,6 +18,7 @@
 		7FA2A0722840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0712840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift */; };
 		7FA2A0FE2841F00F00413275 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FD2841F00F00413275 /* Endpoint.swift */; };
 		7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FF2843252200413275 /* NetworkConfig.swift */; };
+		7FA2A10428447DF100413275 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A10328447DF100413275 /* NetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		7FA2A0712840D7ED00413275 /* ReactiveImageSearcherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7FA2A0FD2841F00F00413275 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7FA2A0FF2843252200413275 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
+		7FA2A10328447DF100413275 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 			children = (
 				7FA2A0FD2841F00F00413275 /* Endpoint.swift */,
 				7FA2A0FF2843252200413275 /* NetworkConfig.swift */,
+				7FA2A10328447DF100413275 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */,
 				7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */,
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
+				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
