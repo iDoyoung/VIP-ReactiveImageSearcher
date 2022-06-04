@@ -90,7 +90,7 @@ class NetworkServiceTests: XCTestCase {
         //when
         sut.request(endpoint: endpoint) { result in
             do {
-                let responseData = try result.get()
+                _ = try result.get()
                 XCTFail("Should not happen")
             } catch let error {
                 guard case NetworkError.cancelled = error else {
@@ -116,7 +116,7 @@ class NetworkServiceTests: XCTestCase {
         //when
         sut.request(endpoint: endpoint) { result in
             do {
-                let responseData = try result.get()
+                _ = try result.get()
                 XCTFail("Should throw url generation error")
             } catch let error {
                 guard case NetworkError.urlGeneration = error else {
@@ -146,7 +146,7 @@ class NetworkServiceTests: XCTestCase {
         //when
         sut.request(endpoint: endpoint) { result in
             do {
-                let responseData = try result.get()
+                _ = try result.get()
                 XCTFail("Shoult not happen")
             } catch let error {
                 if case NetworkError.error(let statusCode, _) = error {
@@ -171,7 +171,7 @@ class NetworkServiceTests: XCTestCase {
         //when
         sut.request(endpoint: endpoint) { result in
             do {
-                let responseData = try result.get()
+                _ = try result.get()
                 XCTFail("Should not happen")
             } catch let error {
                 guard case NetworkError.notConnected = error else {
