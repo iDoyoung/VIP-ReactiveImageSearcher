@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7FA04EDF284AFE5F0040C8E6 /* UnsplashPhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EDE284AFE5F0040C8E6 /* UnsplashPhoto.swift */; };
 		7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A04E2840D7EC00413275 /* AppDelegate.swift */; };
 		7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0502840D7EC00413275 /* SceneDelegate.swift */; };
 		7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0522840D7EC00413275 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7FA04EDE284AFE5F0040C8E6 /* UnsplashPhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnsplashPhoto.swift; sourceTree = "<group>"; };
 		7FA2A04B2840D7EC00413275 /* ReactiveImageSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveImageSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA2A04E2840D7EC00413275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA2A0502840D7EC00413275 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7FA04EDA284AFABE0040C8E6 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7FA04EDD284AFB800040C8E6 /* Usecases */,
+				7FA04EDC284AFB690040C8E6 /* Entities */,
+				7FA04EDB284AFB4A0040C8E6 /* Repositories */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		7FA04EDB284AFB4A0040C8E6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		7FA04EDC284AFB690040C8E6 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				7FA04EDE284AFE5F0040C8E6 /* UnsplashPhoto.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		7FA04EDD284AFB800040C8E6 /* Usecases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecases;
+			sourceTree = "<group>";
+		};
 		7FA2A0422840D7EC00413275 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA2A0FA2840F33900413275 /* Network */,
+				7FA04EDA284AFABE0040C8E6 /* Domain */,
 				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
 				7FA2A0502840D7EC00413275 /* SceneDelegate.swift */,
 				7FA2A0522840D7EC00413275 /* ViewController.swift */,
@@ -281,6 +316,7 @@
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
+				7FA04EDF284AFE5F0040C8E6 /* UnsplashPhoto.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
