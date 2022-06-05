@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7FA04EE4284CA0A10040C8E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE3284CA0A10040C8E6 /* Photo.swift */; };
+		7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */; };
 		7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A04E2840D7EC00413275 /* AppDelegate.swift */; };
 		7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0502840D7EC00413275 /* SceneDelegate.swift */; };
 		7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0522840D7EC00413275 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		7FA04EE3284CA0A10040C8E6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		7FA2A04B2840D7EC00413275 /* ReactiveImageSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveImageSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA2A04E2840D7EC00413275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA2A0502840D7EC00413275 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		7FA04EE5284CD12C0040C8E6 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
 		7FA2A0422840D7EC00413275 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +124,7 @@
 		7FA2A04D2840D7EC00413275 /* ReactiveImageSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				7FA04EE5284CD12C0040C8E6 /* Worker */,
 				7FA04EE2284CA02A0040C8E6 /* Model */,
 				7FA2A0FA2840F33900413275 /* Network */,
 				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
@@ -151,6 +161,7 @@
 				7FA2A0FD2841F00F00413275 /* Endpoint.swift */,
 				7FA2A0FF2843252200413275 /* NetworkConfig.swift */,
 				7FA2A10328447DF100413275 /* NetworkService.swift */,
+				7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -290,6 +301,7 @@
 				7FA2A0FE2841F00F00413275 /* Endpoint.swift in Sources */,
 				7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */,
 				7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */,
+				7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */,
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
