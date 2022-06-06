@@ -79,7 +79,7 @@ class DataTransferServiceTests: XCTestCase {
                                                 response: nil,
                                                 error: nil)
         let networkService = NetworkService(configuration: configure, sessionManager: sessionManager)
-        let sut = DataTransferService(with: networkService)
+        sut = DataTransferService(with: networkService)
         //when
         sut.request(with: EndPoint<MockModel>(path: "https://mock.endpoint.com")) { result in
             do {
@@ -92,5 +92,38 @@ class DataTransferServiceTests: XCTestCase {
         //then
         wait(for: [promise], timeout: 1)
     }
+    
+    func test_sholudBeNetworkError_whenReceivedBadRequest() {
+        //given
+        let promise = expectation(description: "Should throw network error")
+        let configure = NetworkConfigurableMock()
+        let responseData = #"{"title": "MockData"}"#.data(using: .utf8)
+        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+                                       statusCode: 500,
+                                       httpVersion: "1.1",
+                                       headerFields: nil)
+        let sessionManger = SessionManagerMock(data: responseData,
+                                               response: response,
+                                               error: DataTransferErrorMock.someError)
+        let networkService = NetworkService(configuration: configure,
+                                            sessionManager: sessionManger)
+        sut = DataTransferService(with: networkService)
+        //when
+        sut.request(with: EndPoint<MockModel>(path: "https://mock.endpoind.com")) { result in
+            do {
+                _ = try result.get()
+                XCTFail("Should not happen")
+            } catch let error {
+                if case DataTransferError.networkFailure(NetworkError.error(statusCode: 500, _)) = error {
+                    promise.fulfill()
+                } else {
+                    XCTFail("Different error")
+                }
+            }
+        }
+        //then
+        wait(for: [promise], timeout: 1)
+    }
+    
     
 }
