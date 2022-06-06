@@ -93,7 +93,7 @@ class DataTransferServiceTests: XCTestCase {
         wait(for: [promise], timeout: 1)
     }
     
-    func test_sholudBeNetworkError_whenReceivedBadRequest() {
+    func test_shouldBeNetworkError_whenReceivedBadRequest() {
         //given
         let promise = expectation(description: "Should throw network error")
         let configure = NetworkConfigurableMock()
