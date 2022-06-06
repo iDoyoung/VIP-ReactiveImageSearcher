@@ -125,5 +125,34 @@ class DataTransferServiceTests: XCTestCase {
         wait(for: [promise], timeout: 1)
     }
     
-    
+    func test_shouldBeNoDataError_whenReceivedEmptyData() {
+        //given
+        let promise = expectation(description: "Should throw no data error")
+        let configure = NetworkConfigurableMock()
+        let response = HTTPURLResponse(url: URL(string: "test_url")!,
+                                       statusCode: 200,
+                                       httpVersion: "1.1",
+                                       headerFields: nil)
+        let sessionManger = SessionManagerMock(data: nil,
+                                               response: response,
+                                               error: nil)
+        let networkService = NetworkService(configuration: configure,
+                                            sessionManager: sessionManger)
+        sut = DataTransferService(with: networkService)
+        //when
+        sut.request(with: EndPoint<MockModel>(path: "https://mock.endpoind.com")) { result in
+            do {
+                _ = try result.get()
+                XCTFail("Should not happen")
+            } catch let error {
+                if case DataTransferError.noResponse = error {
+                    promise.fulfill()
+                } else {
+                    XCTFail("Different error")
+                }
+            }
+        }
+        //then
+        wait(for: [promise], timeout: 1)
+    }
 }
