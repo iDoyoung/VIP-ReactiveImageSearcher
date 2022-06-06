@@ -46,12 +46,14 @@ class DataTransferServiceTests: XCTestCase {
         try super.tearDownWithError()
     }
 
-    func test_shouldDecodeResponse_whenRecivedVaildJSONResponse() {
+    func test_shouldDecodeResponse_whenReceivedValidJSONResponse() {
         //given
         let promise = expectation(description: "Should decode mock object")
         let configure = NetworkConfigurableMock()
-        let expectResponseData = #"{"name": "MockData"}"#.data(using: .utf8)
-        let sessionManager = SessionManagerMock(data: expectResponseData, response: nil, error: nil)
+        let responseData = #"{"name": "MockData"}"#.data(using: .utf8)
+        let sessionManager = SessionManagerMock(data: responseData,
+                                                response: nil,
+                                                error: nil)
         let networkService = NetworkService(configuration: configure, sessionManager: sessionManager)
         sut = DataTransferService(with: networkService)
         
@@ -65,7 +67,30 @@ class DataTransferServiceTests: XCTestCase {
             }
         }
         //then
-        wait(for: [promise], timeout: 1.0)
+        wait(for: [promise], timeout: 1)
+    }
+    
+    func test_shouldNotDecodeObject_whenReceivedInvalidResponse() {
+        //given
+        let promise = expectation(description: "Should not decode mock object")
+        let configure = NetworkConfigurableMock()
+        let responseData = #"{"title": "MockData"}"#.data(using: .utf8)
+        let sessionManager = SessionManagerMock(data: responseData,
+                                                response: nil,
+                                                error: nil)
+        let networkService = NetworkService(configuration: configure, sessionManager: sessionManager)
+        let sut = DataTransferService(with: networkService)
+        //when
+        sut.request(with: EndPoint<MockModel>(path: "https://mock.endpoint.com")) { result in
+            do {
+                _ = try result.get()
+                XCTFail("Should not happen")
+            } catch {
+                promise.fulfill()
+            }
+        }
+        //then
+        wait(for: [promise], timeout: 1)
     }
     
 }
