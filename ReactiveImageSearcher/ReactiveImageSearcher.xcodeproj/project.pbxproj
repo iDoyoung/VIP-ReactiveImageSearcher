@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7FA04EE4284CA0A10040C8E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE3284CA0A10040C8E6 /* Photo.swift */; };
 		7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */; };
+		7FA04EEB284DA6940040C8E6 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */; };
 		7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A04E2840D7EC00413275 /* AppDelegate.swift */; };
 		7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0502840D7EC00413275 /* SceneDelegate.swift */; };
 		7FA2A0532840D7EC00413275 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0522840D7EC00413275 /* ViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		7FA04EE3284CA0A10040C8E6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
 		7FA2A04B2840D7EC00413275 /* ReactiveImageSearcher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveImageSearcher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA2A04E2840D7EC00413275 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7FA2A0502840D7EC00413275 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA2A0652840D7ED00413275 /* NetworkServiceTests.swift */,
+				7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */,
 			);
 			path = ReactiveImageSearcherTests;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FA04EEB284DA6940040C8E6 /* DataTransferServiceTests.swift in Sources */,
 				7FA2A0662840D7ED00413275 /* NetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
