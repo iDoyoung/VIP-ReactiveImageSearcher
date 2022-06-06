@@ -15,33 +15,28 @@ enum NetworkError: Error {
     case urlGeneration
 }
 
-protocol NetworkManaging {
+protocol NetworkServicing {
+    func reqeust(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void)
+}
+
+protocol NetworkManager {
     typealias CompletionHandler = (Data?, URLResponse?, Error?) -> Void
     
     func request(_ request: URLRequest, completion: @escaping CompletionHandler)
 }
 
-class NetworkSessiomManager: NetworkManaging {
-    
-    func request(_ request: URLRequest, completion: @escaping CompletionHandler) {
-        let task = URLSession.shared.dataTask(with: request, completionHandler: completion)
-        task.resume()
-    }
-    
-}
-
-final class NetworkService {
+final class NetworkService: NetworkServicing {
     
     let configuration: NetworkConfigurable
-    let sessionManager: NetworkManaging
+    let sessionManager: NetworkManager
     
     init(configuration: NetworkConfigurable,
-         sessionManager: NetworkManaging) {
+         sessionManager: NetworkManager) {
         self.configuration = configuration
         self.sessionManager = sessionManager
     }
     
-    func request(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
+    func reqeust(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
         do {
             let urlReqeust = try endpoint.urlRequest(with: configuration)
             sessionManager.request(urlReqeust) { data, response, requestError in

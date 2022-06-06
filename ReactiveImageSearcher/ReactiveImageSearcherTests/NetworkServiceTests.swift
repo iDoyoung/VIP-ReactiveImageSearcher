@@ -17,7 +17,7 @@ class NetworkServiceTests: XCTestCase {
         var queryParameters: [String : String] = [:]
     }
     
-    private struct SessionManagerMock: NetworkManaging {
+    private struct SessionManagerMock: NetworkManager {
         let data: Data?
         let response: HTTPURLResponse?
         let error: Error?
@@ -67,7 +67,7 @@ class NetworkServiceTests: XCTestCase {
                                                 response: nil, error: nil)
         sut = NetworkService(configuration: NetworkConfigurableMock(), sessionManager: sessionManager)
         //when
-        sut.request(endpoint: endpoint) { result in
+        sut.reqeust(endpoint: endpoint) { result in
             guard let responseData = try? result.get() else {
                 XCTFail("Should return proper response")
                 return
@@ -88,7 +88,7 @@ class NetworkServiceTests: XCTestCase {
                                                 error: cancelledError as Error)
         sut = NetworkService(configuration: NetworkConfigurableMock(), sessionManager: sessionManager)
         //when
-        sut.request(endpoint: endpoint) { result in
+        sut.reqeust(endpoint: endpoint) { result in
             do {
                 _ = try result.get()
                 XCTFail("Should not happen")
@@ -114,7 +114,7 @@ class NetworkServiceTests: XCTestCase {
         sut = NetworkService(configuration: NetworkConfigurableMock(), sessionManager: sessionManager)
         endpoint = EndpointMock(path: "~!@#$%", method: .get)
         //when
-        sut.request(endpoint: endpoint) { result in
+        sut.reqeust(endpoint: endpoint) { result in
             do {
                 _ = try result.get()
                 XCTFail("Should throw url generation error")
@@ -144,7 +144,7 @@ class NetworkServiceTests: XCTestCase {
                                                error: error)
         sut = NetworkService(configuration: NetworkConfigurableMock(), sessionManager: sessionManger)
         //when
-        sut.request(endpoint: endpoint) { result in
+        sut.reqeust(endpoint: endpoint) { result in
             do {
                 _ = try result.get()
                 XCTFail("Shoult not happen")
@@ -154,8 +154,7 @@ class NetworkServiceTests: XCTestCase {
                     promise.fulfill()
                 }
             }
-        }
-        //then
+        }       //then
         wait(for: [promise], timeout: 1)
     }
     
@@ -169,7 +168,7 @@ class NetworkServiceTests: XCTestCase {
                                                 error: error as Error)
         sut = NetworkService(configuration: NetworkConfigurableMock(), sessionManager: sessionManager)
         //when
-        sut.request(endpoint: endpoint) { result in
+        sut.reqeust(endpoint: endpoint) { result in
             do {
                 _ = try result.get()
                 XCTFail("Should not happen")
