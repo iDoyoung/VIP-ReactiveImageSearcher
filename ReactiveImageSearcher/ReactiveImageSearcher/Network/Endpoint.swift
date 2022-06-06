@@ -31,11 +31,11 @@ class EndPoint<R>: ResponseRequestable {
     let bodyParameters: [String : Any]
     
     init(path: String,
-         isFullPath: Bool,
-         method: HttpMethodType,
-         headerParameters: [String: String],
-         queryParameters: [String: String],
-         bodyParameters: [String: Any]) {
+         isFullPath: Bool = false,
+         method: HttpMethodType = .get,
+         headerParameters: [String: String] =  [:],
+         queryParameters: [String: String] = [:],
+         bodyParameters: [String: Any] = [:]) {
         self.path = path
         self.isFullPath = isFullPath
         self.method = method
