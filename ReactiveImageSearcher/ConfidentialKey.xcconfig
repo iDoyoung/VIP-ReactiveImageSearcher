@@ -8,4 +8,4 @@
 // Configuration settings file format documentation can be found at:
 // https://help.apple.com/xcode/#/dev745c5c974
 
-CLIENT_ID_KEY = 12345
+CLIENT_ID_KEY = ABCDEFGHI
