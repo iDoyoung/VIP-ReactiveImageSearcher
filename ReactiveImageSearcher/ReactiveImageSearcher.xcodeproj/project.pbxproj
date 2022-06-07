@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F28EFA7284E184C00DE32AE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */; };
 		7FA04EE4284CA0A10040C8E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE3284CA0A10040C8E6 /* Photo.swift */; };
 		7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */; };
 		7FA04EEB284DA6940040C8E6 /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */; };
@@ -42,6 +43,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfidentialKey.xcconfig; sourceTree = "<group>"; };
 		7FA04EE3284CA0A10040C8E6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
 		7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
@@ -106,6 +109,7 @@
 		7FA2A0422840D7EC00413275 = {
 			isa = PBXGroup;
 			children = (
+				7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */,
 				7FA2A04D2840D7EC00413275 /* ReactiveImageSearcher */,
 				7FA2A0642840D7ED00413275 /* ReactiveImageSearcherTests */,
 				7FA2A06E2840D7ED00413275 /* ReactiveImageSearcherUITests */,
@@ -162,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				7FA2A0FD2841F00F00413275 /* Endpoint.swift */,
+				7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */,
 				7FA2A0FF2843252200413275 /* NetworkConfig.swift */,
 				7FA2A10328447DF100413275 /* NetworkService.swift */,
 				7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */,
@@ -308,6 +313,7 @@
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
+				7F28EFA7284E184C00DE32AE /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,6 +372,7 @@
 /* Begin XCBuildConfiguration section */
 		7FA2A0732840D7ED00413275 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -426,6 +433,7 @@
 		};
 		7FA2A0742840D7ED00413275 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;

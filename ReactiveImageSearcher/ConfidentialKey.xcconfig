@@ -1,0 +1,11 @@
+//
+//  ConfidentialKey.xcconfig
+//  ReactiveImageSearcher
+//
+//  Created by Doyoung on 2022/06/07.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+CLIENT_ID_KEY = 12345
