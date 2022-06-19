@@ -16,7 +16,7 @@ enum NetworkError: Error {
 }
 
 protocol NetworkServicing {
-    func reqeust(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void)
+    func request(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void)
 }
 
 protocol NetworkManager {
@@ -43,7 +43,7 @@ final class NetworkService: NetworkServicing {
         self.sessionManager = sessionManager
     }
     
-    func reqeust(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
+    func request(endpoint: Requestable, completion: @escaping (Result<Data?, NetworkError>) -> Void) {
         do {
             let urlReqeust = try endpoint.urlRequest(with: configuration)
             sessionManager.request(urlReqeust) { data, response, requestError in

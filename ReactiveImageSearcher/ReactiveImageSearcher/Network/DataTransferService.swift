@@ -58,7 +58,7 @@ final class DataTransferService: DataTransferable {
     }
     
     func request<T, E>(with endpoint: E, completion: @escaping CompletionHandler<T>) where T : Decodable, T == E.Response, E : ResponseRequestable {
-        networkService.reqeust(endpoint: endpoint) { result in
+        networkService.request(endpoint: endpoint) { result in
             switch result {
             case .success(let data):
                 let result: Result<T, DataTransferError> = self.decode(data: data)
@@ -75,7 +75,7 @@ final class DataTransferService: DataTransferable {
     }
             
     func request<E>(with endpoint: E, completion: @escaping CompletionHandler<Void>) where E : ResponseRequestable, E.Response == Void {
-        networkService.reqeust(endpoint: endpoint) { result in
+        networkService.request(endpoint: endpoint) { result in
             switch result {
             case .success:
                 DispatchQueue.main.async {
