@@ -25,13 +25,20 @@ protocol NetworkManager {
     func request(_ request: URLRequest, completion: @escaping CompletionHandler)
 }
 
+class DefaultNetworkSessionManager: NetworkManager {
+    func request(_ request: URLRequest, completion: @escaping CompletionHandler) {
+        let task = URLSession.shared.dataTask(with: request, completionHandler: completion)
+        task.resume()
+    }
+}
+
 final class NetworkService: NetworkServicing {
     
     let configuration: NetworkConfigurable
     let sessionManager: NetworkManager
     
     init(configuration: NetworkConfigurable,
-         sessionManager: NetworkManager) {
+         sessionManager: NetworkManager = DefaultNetworkSessionManager()) {
         self.configuration = configuration
         self.sessionManager = sessionManager
     }
@@ -55,23 +62,6 @@ final class NetworkService: NetworkServicing {
         } catch {
             completion(.failure(.urlGeneration))
         }
-    }
-    
-    private func request(request: URLRequest, completion: @escaping (Result<Data?, NetworkError>) -> Void) -> URLSessionDataTask {
-        let dataTask = URLSession.shared.dataTask(with: request) { data, response, requestError in
-            if let requestError = requestError {
-                var error: NetworkError
-                if let response = response as? HTTPURLResponse {
-                    error = .error(statusCode: response.statusCode, data: data)
-                } else {
-                    error = self.resolve(error: requestError)
-                }
-                completion(.failure(error))
-            } else {
-                completion(.success(data))
-            }
-        }
-        return dataTask
     }
     
     private func resolve(error: Error) -> NetworkError {
