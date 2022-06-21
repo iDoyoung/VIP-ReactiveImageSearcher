@@ -57,6 +57,7 @@ final class DataTransferService: DataTransferable {
         self.errorResolver = errorResolver
     }
     
+    ///  Handle T type resource data when success request
     func request<T, E>(with endpoint: E, completion: @escaping CompletionHandler<T>) where T : Decodable, T == E.Response, E : ResponseRequestable {
         networkService.request(endpoint: endpoint) { result in
             switch result {
@@ -74,6 +75,7 @@ final class DataTransferService: DataTransferable {
         }
     }
             
+    /// Handle any data when success request
     func request<E>(with endpoint: E, completion: @escaping CompletionHandler<Void>) where E : ResponseRequestable, E.Response == Void {
         networkService.request(endpoint: endpoint) { result in
             switch result {
