@@ -10,7 +10,7 @@ import Foundation
 struct APIEndpoint {
    
     static func getRandomPhoto() -> EndPoint<Photo> {
-        return EndPoint(path: UnsplashAPI.Path.randomPhoto,
+        return EndPoint<Photo>(path: UnsplashAPI.Path.randomPhoto,
                         queryParameters: [UnsplashAPI.ClientID.key: UnsplashAPI.ClientID.value])
     }
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Photo {
+struct Photo: Decodable {
     let id: String
     let created_at: String
     let updated_at: String
