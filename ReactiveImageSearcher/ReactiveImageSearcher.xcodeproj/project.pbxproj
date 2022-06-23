@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7F28EFA7284E184C00DE32AE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */; };
 		7F7892DA2861E38200308164 /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892D92861E38200308164 /* Namespace.swift */; };
+		7F7892DD2862DFB500308164 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892DC2862DFB500308164 /* MainInteractor.swift */; };
 		7F826296284EEF1A00256F99 /* PhotoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826295284EEF1A00256F99 /* PhotoWorker.swift */; };
 		7FA04EE4284CA0A10040C8E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE3284CA0A10040C8E6 /* Photo.swift */; };
 		7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */; };
@@ -48,6 +49,7 @@
 		7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
 		7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfidentialKey.xcconfig; sourceTree = "<group>"; };
 		7F7892D92861E38200308164 /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
+		7F7892DC2862DFB500308164 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
 		7F826295284EEF1A00256F99 /* PhotoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWorker.swift; sourceTree = "<group>"; };
 		7FA04EE3284CA0A10040C8E6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
@@ -103,6 +105,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		7F7892DB2862DEFC00308164 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2A0522840D7EC00413275 /* ViewController.swift */,
+				7F7892DC2862DFB500308164 /* MainInteractor.swift */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
 		7FA04EE2284CA02A0040C8E6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,13 +154,13 @@
 		7FA2A04D2840D7EC00413275 /* ReactiveImageSearcher */ = {
 			isa = PBXGroup;
 			children = (
+				7F7892DB2862DEFC00308164 /* Scene */,
 				7F7892D82861E27800308164 /* Utility */,
 				7FA04EE5284CD12C0040C8E6 /* Worker */,
 				7FA04EE2284CA02A0040C8E6 /* Model */,
 				7FA2A0FA2840F33900413275 /* Network */,
 				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
 				7FA2A0502840D7EC00413275 /* SceneDelegate.swift */,
-				7FA2A0522840D7EC00413275 /* ViewController.swift */,
 				7FA2A0542840D7EC00413275 /* Main.storyboard */,
 				7FA2A0572840D7ED00413275 /* Assets.xcassets */,
 				7FA2A0592840D7ED00413275 /* LaunchScreen.storyboard */,
@@ -325,6 +336,7 @@
 				7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */,
 				7F826296284EEF1A00256F99 /* PhotoWorker.swift in Sources */,
 				7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */,
+				7F7892DD2862DFB500308164 /* MainInteractor.swift in Sources */,
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
