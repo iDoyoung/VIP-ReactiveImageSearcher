@@ -13,9 +13,9 @@ protocol PhotoStorable {
 class PhotoWorker {
     
     typealias CompletionHandler = (Result<Photo, DataTransferError>) -> Void
-    var service: DataTransferService
+    var service: DataTransferable
     
-    init (service: DataTransferService = DataTransferService(with: NetworkService(configuration: NetworkConfiguration(baseURL: URL(string: "https://api.unsplash.com/")!)))) {
+    init (service: DataTransferable = DataTransferService(with: NetworkService(configuration: NetworkConfiguration(baseURL: URL(string: "https://api.unsplash.com/")!)))) {
         self.service = service
     }
     
