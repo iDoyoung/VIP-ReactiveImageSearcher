@@ -10,6 +10,8 @@
 		7F28EFA7284E184C00DE32AE /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F28EFA6284E184C00DE32AE /* APIEndpoint.swift */; };
 		7F7892DA2861E38200308164 /* Namespace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892D92861E38200308164 /* Namespace.swift */; };
 		7F7892DD2862DFB500308164 /* MainInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892DC2862DFB500308164 /* MainInteractor.swift */; };
+		7F7892DF28643A9400308164 /* PhotoWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892DE28643A9400308164 /* PhotoWorkerTests.swift */; };
+		7F7892E128655A8700308164 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7892E028655A8700308164 /* Seeds.swift */; };
 		7F826296284EEF1A00256F99 /* PhotoWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F826295284EEF1A00256F99 /* PhotoWorker.swift */; };
 		7FA04EE4284CA0A10040C8E6 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE3284CA0A10040C8E6 /* Photo.swift */; };
 		7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */; };
@@ -50,6 +52,8 @@
 		7F28EFA8284ED81B00DE32AE /* ConfidentialKey.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfidentialKey.xcconfig; sourceTree = "<group>"; };
 		7F7892D92861E38200308164 /* Namespace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Namespace.swift; sourceTree = "<group>"; };
 		7F7892DC2862DFB500308164 /* MainInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractor.swift; sourceTree = "<group>"; };
+		7F7892DE28643A9400308164 /* PhotoWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWorkerTests.swift; sourceTree = "<group>"; };
+		7F7892E028655A8700308164 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		7F826295284EEF1A00256F99 /* PhotoWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWorker.swift; sourceTree = "<group>"; };
 		7FA04EE3284CA0A10040C8E6 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		7FA04EE8284CE0410040C8E6 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
@@ -174,6 +178,8 @@
 			children = (
 				7FA2A0652840D7ED00413275 /* NetworkServiceTests.swift */,
 				7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */,
+				7F7892DE28643A9400308164 /* PhotoWorkerTests.swift */,
+				7F7892E028655A8700308164 /* Seeds.swift */,
 			);
 			path = ReactiveImageSearcherTests;
 			sourceTree = "<group>";
@@ -350,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA04EEB284DA6940040C8E6 /* DataTransferServiceTests.swift in Sources */,
+				7F7892DF28643A9400308164 /* PhotoWorkerTests.swift in Sources */,
+				7F7892E128655A8700308164 /* Seeds.swift in Sources */,
 				7FA2A0662840D7ED00413275 /* NetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
