@@ -24,19 +24,29 @@ class ViewController: UIViewController {
         setupViewController()
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchRandomPhoto()
+    }
+    
     func setupViewController() {
         let viewController = self
         let interactor = MainInteractor()
+        let presenter = MainPresenter()
         viewController.interactor = interactor
-        
+        interactor.presenter = presenter
     }
-
+    
+    //MARK: - Fetch photo
+    func fetchRandomPhoto() {
+        interactor?.fetchRandomPhoto()
+    }
+    
 }
 
 extension ViewController: MainDisplayLogic {
