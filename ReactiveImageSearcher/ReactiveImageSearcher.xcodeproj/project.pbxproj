@@ -31,6 +31,7 @@
 		7FC1596D2866F2D500D782A8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596C2866F2D500D782A8 /* MainPresenter.swift */; };
 		7FC159702867F0F000D782A8 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */; };
 		7FC1597428682BFC00D782A8 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */; };
+		7FC1597628684AF000D782A8 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597528684AF000D782A8 /* MainViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		7FC1596C2866F2D500D782A8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
+		7FC1597528684AF000D782A8 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +218,7 @@
 		7FC1596E2867F07300D782A8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7FC1597528684AF000D782A8 /* MainViewControllerTests.swift */,
 				7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */,
 				7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */,
 			);
@@ -379,6 +382,7 @@
 				7FC159702867F0F000D782A8 /* MainPresenterTests.swift in Sources */,
 				7F7892E128655A8700308164 /* Seeds.swift in Sources */,
 				7FA2A0662840D7ED00413275 /* NetworkServiceTests.swift in Sources */,
+				7FC1597628684AF000D782A8 /* MainViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
