@@ -30,6 +30,7 @@
 		7FA2A10428447DF100413275 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A10328447DF100413275 /* NetworkService.swift */; };
 		7FC1596D2866F2D500D782A8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596C2866F2D500D782A8 /* MainPresenter.swift */; };
 		7FC159702867F0F000D782A8 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */; };
+		7FC1597428682BFC00D782A8 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		7FA2A10328447DF100413275 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		7FC1596C2866F2D500D782A8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +216,7 @@
 		7FC1596E2867F07300D782A8 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */,
 				7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */,
 			);
 			path = Main;
@@ -371,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FA04EEB284DA6940040C8E6 /* DataTransferServiceTests.swift in Sources */,
+				7FC1597428682BFC00D782A8 /* MainInteractorTests.swift in Sources */,
 				7F7892DF28643A9400308164 /* PhotoWorkerTests.swift in Sources */,
 				7FC159702867F0F000D782A8 /* MainPresenterTests.swift in Sources */,
 				7F7892E128655A8700308164 /* Seeds.swift in Sources */,
