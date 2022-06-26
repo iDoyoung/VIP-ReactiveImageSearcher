@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
     var interactor: MainInteractor?
     
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     
 }
 
-extension ViewController: MainDisplayLogic {
+extension MainViewController: MainDisplayLogic {
     func displayRandomPhoto() {
     }
     
