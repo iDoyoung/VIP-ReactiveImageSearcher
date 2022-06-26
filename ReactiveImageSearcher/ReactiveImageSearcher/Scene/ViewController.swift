@@ -41,10 +41,14 @@ class ViewController: UIViewController {
 
 extension ViewController: MainDisplayLogic {
     func displayRandomPhoto() {
-        
     }
+    
+    func displayFailureFetchingAlert() {
+    }
+    
 }
 
 protocol MainDisplayLogic: AnyObject {
     func displayRandomPhoto()
+    func displayFailureFetchingAlert()
 }

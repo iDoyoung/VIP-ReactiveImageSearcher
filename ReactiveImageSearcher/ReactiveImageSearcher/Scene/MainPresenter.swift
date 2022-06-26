@@ -9,14 +9,19 @@ import UIKit
 
 final class MainPresenter: MainPresentLogic {
     
-    weak var viewControlelr: MainDisplayLogic?
+    weak var viewController: MainDisplayLogic?
     
-    func showFetchedRandomPhotoSuccess() {
-        viewControlelr?.displayRandomPhoto()
+    func showSuccessFetchedRandomPhoto() {
+        viewController?.displayRandomPhoto()
+    }
+    
+    func showFailureFetchedRandomPhoto() {
+        viewController?.displayFailureFetchingAlert()
     }
     
 }
 
 protocol MainPresentLogic {
-    func showFetchedRandomPhotoSuccess()
+    func showSuccessFetchedRandomPhoto()
+    func showFailureFetchedRandomPhoto()
 }
