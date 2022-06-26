@@ -9,7 +9,7 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    var interactor: MainInteractor?
+    var interactor: MainBusinessLogic?
     
     @IBOutlet weak var imageView: UIImageView!
     
