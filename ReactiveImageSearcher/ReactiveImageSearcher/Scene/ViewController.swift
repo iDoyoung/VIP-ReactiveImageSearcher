@@ -39,3 +39,12 @@ class ViewController: UIViewController {
 
 }
 
+extension ViewController: MainDisplayLogic {
+    func displayRandomPhoto() {
+        
+    }
+}
+
+protocol MainDisplayLogic: AnyObject {
+    func displayRandomPhoto()
+}

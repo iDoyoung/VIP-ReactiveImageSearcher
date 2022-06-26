@@ -10,10 +10,13 @@ import Foundation
 
 final class MainInteractor: MainBusinessLogic, MainDataStore {
     
+    var presenter: MainPresentLogic?
     var photoWorker = PhotoWorker()
     
     func fetchRandomPhoto() {
-        
+        photoWorker.fetchRandomPhoto { <#Result<Photo, DataTransferError>#> in
+            <#code#>
+        }
     }
     
 }

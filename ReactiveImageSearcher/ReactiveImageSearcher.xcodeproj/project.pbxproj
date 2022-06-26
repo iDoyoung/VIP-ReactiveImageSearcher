@@ -28,6 +28,7 @@
 		7FA2A0FE2841F00F00413275 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FD2841F00F00413275 /* Endpoint.swift */; };
 		7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0FF2843252200413275 /* NetworkConfig.swift */; };
 		7FA2A10428447DF100413275 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A10328447DF100413275 /* NetworkService.swift */; };
+		7FC1596D2866F2D500D782A8 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596C2866F2D500D782A8 /* MainPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		7FA2A0FD2841F00F00413275 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7FA2A0FF2843252200413275 /* NetworkConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfig.swift; sourceTree = "<group>"; };
 		7FA2A10328447DF100413275 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		7FC1596C2866F2D500D782A8 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +116,7 @@
 			children = (
 				7FA2A0522840D7EC00413275 /* ViewController.swift */,
 				7F7892DC2862DFB500308164 /* MainInteractor.swift */,
+				7FC1596C2866F2D500D782A8 /* MainPresenter.swift */,
 			);
 			path = Scene;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				7FA2A04F2840D7EC00413275 /* AppDelegate.swift in Sources */,
 				7F826296284EEF1A00256F99 /* PhotoWorker.swift in Sources */,
 				7FA04EE9284CE0410040C8E6 /* DataTransferService.swift in Sources */,
+				7FC1596D2866F2D500D782A8 /* MainPresenter.swift in Sources */,
 				7F7892DD2862DFB500308164 /* MainInteractor.swift in Sources */,
 				7FA2A1002843252200413275 /* NetworkConfig.swift in Sources */,
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
