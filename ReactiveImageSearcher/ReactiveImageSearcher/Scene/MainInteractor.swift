@@ -14,10 +14,16 @@ final class MainInteractor: MainBusinessLogic, MainDataStore {
     var photoWorker = PhotoWorker()
     
     func fetchRandomPhoto() {
-        photoWorker.fetchRandomPhoto { <#Result<Photo, DataTransferError>#> in
-            <#code#>
+        photoWorker.fetchRandomPhoto { [weak self] result in
+            switch result {
+            case .success(let photo):
+                self?.presenter?.showSuccessFetchedRandomPhoto(photo)
+            case .failure(let error):
+                //TODO: Handler each error
+                self?.presenter?.showFailureFetchedRandomPhoto()
+            }
         }
-    }
+   }
     
 }
 
