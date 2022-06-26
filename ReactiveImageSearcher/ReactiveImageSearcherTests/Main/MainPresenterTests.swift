@@ -45,7 +45,8 @@ class MainPresenterTests: XCTestCase {
         let mainDisplayLogic = MainDisplayLogicSpy()
         sut.viewController = mainDisplayLogic
         //When
-        sut.showSuccessFetchedRandomPhoto()
+        let photo = Seeds.Photos.randomPhoto
+        sut.showSuccessFetchedRandomPhoto(photo)
         //Then
         XCTAssert(mainDisplayLogic.displayRandomPhotoCalled, "Display random photo")
     }
