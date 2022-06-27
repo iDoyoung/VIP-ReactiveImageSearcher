@@ -16,7 +16,7 @@ struct Photo: Decodable, Equatable {
     let created_at: String
     let updated_at: String
     let promoted_at: String
-    let imageURL: ImageURL
+    let urls: ImageURL
     
     struct ImageURL: Decodable {
         let raw: String
