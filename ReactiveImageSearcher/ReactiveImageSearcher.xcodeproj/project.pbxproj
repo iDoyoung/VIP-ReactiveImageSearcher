@@ -32,6 +32,8 @@
 		7FC159702867F0F000D782A8 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */; };
 		7FC1597428682BFC00D782A8 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */; };
 		7FC1597628684AF000D782A8 /* MainViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597528684AF000D782A8 /* MainViewControllerTests.swift */; };
+		7FC159782868611600D782A8 /* CashManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC159772868611600D782A8 /* CashManager.swift */; };
+		7FC1597A2868616E00D782A8 /* UIImageView+LoadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC159792868616E00D782A8 /* UIImageView+LoadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
 		7FC1597328682BFC00D782A8 /* MainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
 		7FC1597528684AF000D782A8 /* MainViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewControllerTests.swift; sourceTree = "<group>"; };
+		7FC159772868611600D782A8 /* CashManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CashManager.swift; sourceTree = "<group>"; };
+		7FC159792868616E00D782A8 /* UIImageView+LoadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				7F7892D92861E38200308164 /* Namespace.swift */,
+				7FC159772868611600D782A8 /* CashManager.swift */,
+				7FC159792868616E00D782A8 /* UIImageView+LoadImage.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -368,6 +374,8 @@
 				7FA2A10428447DF100413275 /* NetworkService.swift in Sources */,
 				7FA2A0512840D7EC00413275 /* SceneDelegate.swift in Sources */,
 				7F7892DA2861E38200308164 /* Namespace.swift in Sources */,
+				7FC1597A2868616E00D782A8 /* UIImageView+LoadImage.swift in Sources */,
+				7FC159782868611600D782A8 /* CashManager.swift in Sources */,
 				7F28EFA7284E184C00DE32AE /* APIEndpoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
