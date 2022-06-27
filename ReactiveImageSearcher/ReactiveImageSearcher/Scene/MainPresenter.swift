@@ -12,7 +12,7 @@ final class MainPresenter: MainPresentLogic {
     weak var viewController: MainDisplayLogic?
     
     func showSuccessFetchedRandomPhoto(_ photo: Photo) {
-        viewController?.displayRandomPhoto()
+        viewController?.displayRandomPhoto(photo)
     }
     
     func showFailureFetchedRandomPhoto() {

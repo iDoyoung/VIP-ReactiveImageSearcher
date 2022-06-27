@@ -40,6 +40,7 @@ class MainViewController: UIViewController {
         let presenter = MainPresenter()
         viewController.interactor = interactor
         interactor.presenter = presenter
+        presenter.viewController = viewController
     }
     
     //MARK: - Fetch photo
@@ -50,15 +51,18 @@ class MainViewController: UIViewController {
 }
 
 extension MainViewController: MainDisplayLogic {
-    func displayRandomPhoto() {
+    
+    func displayRandomPhoto(_ photo: Photo) {
+        imageView.loadImage(url: photo.urls.full)
     }
     
     func displayFailureFetchingAlert() {
+        print("Error")
     }
     
 }
 
 protocol MainDisplayLogic: AnyObject {
-    func displayRandomPhoto()
+    func displayRandomPhoto(_ photo: Photo)
     func displayFailureFetchingAlert()
 }
