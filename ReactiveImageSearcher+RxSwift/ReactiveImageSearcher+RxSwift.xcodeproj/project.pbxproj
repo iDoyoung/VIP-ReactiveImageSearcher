@@ -20,6 +20,7 @@
 		7FA2A0AE2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0AD2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift */; };
 		7FC1597D286A98E200D782A8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597C286A98E200D782A8 /* Endpoint.swift */; };
 		7FC1597F286A993E00D782A8 /* NetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597E286A993E00D782A8 /* NetworkConfiguration.swift */; };
+		7FC15981286AEA8700D782A8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC15980286AEA8700D782A8 /* NetworkService.swift */; };
 		FFDD18E90DBC989EFE6BE131 /* Pods_ReactiveImageSearcher_RxSwift_ReactiveImageSearcher_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E78CBE93A6DA8B8ACC22C55 /* Pods_ReactiveImageSearcher_RxSwift_ReactiveImageSearcher_RxSwiftUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +61,7 @@
 		7FA2A0AD2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7FC1597C286A98E200D782A8 /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		7FC1597E286A993E00D782A8 /* NetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfiguration.swift; sourceTree = "<group>"; };
+		7FC15980286AEA8700D782A8 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		8691E3CF9BA43501265E139D /* Pods_ReactiveImageSearcher_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveImageSearcher_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8924D1E562DF84517456A7AF /* Pods-ReactiveImageSearcher+RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveImageSearcher+RxSwift.release.xcconfig"; path = "Target Support Files/Pods-ReactiveImageSearcher+RxSwift/Pods-ReactiveImageSearcher+RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		AA6C48DB71C2A11C6548CC81 /* Pods-ReactiveImageSearcher+RxSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveImageSearcher+RxSwiftTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactiveImageSearcher+RxSwiftTests/Pods-ReactiveImageSearcher+RxSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 			children = (
 				7FC1597C286A98E200D782A8 /* Endpoint.swift */,
 				7FC1597E286A993E00D782A8 /* NetworkConfiguration.swift */,
+				7FC15980286AEA8700D782A8 /* NetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				7FC1597F286A993E00D782A8 /* NetworkConfiguration.swift in Sources */,
 				7FA2A08B2840D9F800413275 /* AppDelegate.swift in Sources */,
 				7FC1597D286A98E200D782A8 /* Endpoint.swift in Sources */,
+				7FC15981286AEA8700D782A8 /* NetworkService.swift in Sources */,
 				7FA2A08D2840D9F800413275 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
