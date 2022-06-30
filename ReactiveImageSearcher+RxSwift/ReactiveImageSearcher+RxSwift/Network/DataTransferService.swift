@@ -23,15 +23,11 @@ protocol DataTransferErrorResolvable {
 }
 
 protocol DataTransferable {
-    typealias CompletionHandler<T> = (Result<T, DataTransferError>) -> Void
-    
     ///  Handle T type resource data when success request
-    func request<T: Decodable, E: ResponseRequestable>(with endpoint: E,
-                                                       completion: @escaping CompletionHandler<T>) where E.Response == T
+    func request<T, E>(with endpoint: E) -> Observable<T> where T: Decodable, T == E.Response, E: ResponseRequestable
     
     /// Handle any data when success request
-    func request<E: ResponseRequestable>(with endpoint: E,
-                                         completion: @escaping CompletionHandler<Void>) where E.Response == Void
+    func request<E>(with endpoint: E) -> Observable<Data?> where E: ResponseRequestable
 }
 
 class JSONResponseDecoder: ResponseDecoder {
@@ -49,7 +45,7 @@ class DataTransferErrorResolver: DataTransferErrorResolvable {
     }
 }
 
-final class DataTransferService {
+final class DataTransferService: DataTransferable {
     
     private let networkService: NetworkServicing
     private let errorResolver: DataTransferErrorResolvable
