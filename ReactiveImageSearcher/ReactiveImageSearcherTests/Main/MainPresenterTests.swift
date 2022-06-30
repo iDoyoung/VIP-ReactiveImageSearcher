@@ -29,7 +29,7 @@ class MainPresenterTests: XCTestCase {
         var displayRandomPhotoCalled = false
         var displayFailureFetchingAlertCalled = false
         
-        func displayRandomPhoto() {
+        func displayRandomPhoto(_ photo: Photo) {
             displayRandomPhotoCalled = true
         }
         

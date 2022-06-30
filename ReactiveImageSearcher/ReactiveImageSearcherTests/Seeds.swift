@@ -16,7 +16,7 @@ struct Seeds {
                                        created_at: "2022-06-24T10:10:29-04:00",
                                        updated_at: "2022-06-24T10:10:29-04:00",
                                        promoted_at: "2022-06-24T10:10:29-04:00",
-                                       imageURL: imageURL)
+                                       urls: imageURL)
     }
     
 }
