@@ -15,6 +15,7 @@ class PhotoWorker {
         self.service = service
     }
     
+    @discardableResult
     func fetchRandomPhoto() -> Observable<Photo> {
         let endpoint = APIEndpoint.getRandomPhoto()
         return service.request(with: endpoint)
