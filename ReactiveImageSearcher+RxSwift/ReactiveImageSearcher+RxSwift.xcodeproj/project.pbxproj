@@ -164,7 +164,6 @@
 				7FC1597B286A8EA100D782A8 /* Network */,
 				7FA2A08A2840D9F800413275 /* AppDelegate.swift */,
 				7FA2A08C2840D9F800413275 /* SceneDelegate.swift */,
-				7FA2A08E2840D9F800413275 /* MainViewController.swift */,
 				7FA2A0902840D9F800413275 /* Main.storyboard */,
 				7FA2A0932840D9F900413275 /* Assets.xcassets */,
 				7FA2A0952840D9F900413275 /* LaunchScreen.storyboard */,
@@ -208,6 +207,7 @@
 		7FC15986286D78AB00D782A8 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7FA2A08E2840D9F800413275 /* MainViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
