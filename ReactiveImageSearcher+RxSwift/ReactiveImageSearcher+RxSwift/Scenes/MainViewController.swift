@@ -16,12 +16,12 @@ class MainViewController: UIViewController {
     //MARK: - VC Life cycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
-        setUpViewController()
+        setupViewController()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setUpViewController()
+        setupViewController()
     }
     
     override func viewDidLoad() {
@@ -53,6 +53,6 @@ extension MainViewController: MainDisplayLogic {
 }
 
 protocol MainDisplayLogic: AnyObject {
-    func displatRandomPhoto(_ photo: Photo)
+    func displayRandomPhoto(_ photo: Photo)
     func displayFailureFetchingAlert()
 }
