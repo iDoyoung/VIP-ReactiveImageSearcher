@@ -34,6 +34,7 @@
 		7FC1599E286D85A100D782A8 /* PhotoWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1599D286D85A100D782A8 /* PhotoWorkerTests.swift */; };
 		7FC159A0286DEA1200D782A8 /* Seeds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1599F286DEA1200D782A8 /* Seeds.swift */; };
 		7FF0E29A286EDFD1007E8F64 /* MainPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0E299286EDFD1007E8F64 /* MainPresenterTests.swift */; };
+		7FF0E29C286EE57D007E8F64 /* MainViewcontrollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF0E29B286EE57D007E8F64 /* MainViewcontrollerTests.swift */; };
 		7FF6ADE9286ECC5D00DF9559 /* MainInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF6ADE8286ECC5D00DF9559 /* MainInteractorTests.swift */; };
 		FFDD18E90DBC989EFE6BE131 /* Pods_ReactiveImageSearcher_RxSwift_ReactiveImageSearcher_RxSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E78CBE93A6DA8B8ACC22C55 /* Pods_ReactiveImageSearcher_RxSwift_ReactiveImageSearcher_RxSwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -90,6 +91,7 @@
 		7FC1599D286D85A100D782A8 /* PhotoWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoWorkerTests.swift; sourceTree = "<group>"; };
 		7FC1599F286DEA1200D782A8 /* Seeds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Seeds.swift; sourceTree = "<group>"; };
 		7FF0E299286EDFD1007E8F64 /* MainPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterTests.swift; sourceTree = "<group>"; };
+		7FF0E29B286EE57D007E8F64 /* MainViewcontrollerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewcontrollerTests.swift; sourceTree = "<group>"; };
 		7FF6ADE8286ECC5D00DF9559 /* MainInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInteractorTests.swift; sourceTree = "<group>"; };
 		8691E3CF9BA43501265E139D /* Pods_ReactiveImageSearcher_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactiveImageSearcher_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8924D1E562DF84517456A7AF /* Pods-ReactiveImageSearcher+RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactiveImageSearcher+RxSwift.release.xcconfig"; path = "Target Support Files/Pods-ReactiveImageSearcher+RxSwift/Pods-ReactiveImageSearcher+RxSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				7FC1599F286DEA1200D782A8 /* Seeds.swift */,
 				7FF6ADE8286ECC5D00DF9559 /* MainInteractorTests.swift */,
 				7FF0E299286EDFD1007E8F64 /* MainPresenterTests.swift */,
+				7FF0E29B286EE57D007E8F64 /* MainViewcontrollerTests.swift */,
 			);
 			path = "ReactiveImageSearcher+RxSwiftTests";
 			sourceTree = "<group>";
@@ -539,6 +542,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7FF0E29C286EE57D007E8F64 /* MainViewcontrollerTests.swift in Sources */,
 				7FC15983286C8D0500D782A8 /* NetworkServiceTests.swift in Sources */,
 				7FC1599E286D85A100D782A8 /* PhotoWorkerTests.swift in Sources */,
 				7FC159A0286DEA1200D782A8 /* Seeds.swift in Sources */,
