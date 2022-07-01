@@ -26,9 +26,13 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchRandomPhoto()
+    }
+    
     func setupViewController() {
         let viewController = self
         let interactor = MainInteractor()
@@ -36,6 +40,11 @@ class MainViewController: UIViewController {
         viewController.interactor = interactor
         interactor.presenter = presenter
         presenter.viewController = viewController
+    }
+    
+    //MARK: Fetch
+    func fetchRandomPhoto() {
+        interactor?.fetchRandomPhoto()
     }
 
 }
