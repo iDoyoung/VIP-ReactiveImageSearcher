@@ -40,7 +40,7 @@ class MainViewController: UIViewController {
 
 }
 
-extension MainViewController: MainDisplayLogic{
+extension MainViewController: MainDisplayLogic {
     
     func displayRandomPhoto(_ photo: Photo) {
         imageView.loadImage(url: photo.urls.full)
@@ -52,7 +52,7 @@ extension MainViewController: MainDisplayLogic{
     
 }
 
-protocol MainDisplayLogic {
+protocol MainDisplayLogic: AnyObject {
     func displatRandomPhoto(_ photo: Photo)
     func displayFailureFetchingAlert()
 }
