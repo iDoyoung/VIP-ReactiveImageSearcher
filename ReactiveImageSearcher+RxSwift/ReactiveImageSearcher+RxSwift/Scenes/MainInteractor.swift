@@ -15,7 +15,11 @@ final class MainInteractor: MainBusinessLogic {
     
     func fetchRandomPhoto() {
         let observable = photoWorker.fetchRandomPhoto()
-        presenter?.showSuccessFetchedRandomPhoto(observable)
+        observable.subscribe { [weak self] photo in
+            self?.presenter?.showSuccessFetchedRandomPhoto(photo)
+        } onError: { error in
+            
+        }.disposed(by: disposeBag)
     }
     
 }
