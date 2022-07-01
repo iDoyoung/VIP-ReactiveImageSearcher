@@ -12,8 +12,8 @@ final class MainPresenter: MainPresentLogic {
     
     weak var viewController: MainDisplayLogic?
     
-    func showSuccessFetchedRandomPhoto() {
-        viewController?.displatRandomPhoto(<#T##photo: Photo##Photo#>)
+    func showSuccessFetchedRandomPhoto(_ observable: Observable<Photo>) {
+        //viewController?.displatRandomPhoto(<#T##photo: Photo##Photo#>)
     }
     
     func showFailureFetchedRandomPhoto() {
@@ -23,6 +23,6 @@ final class MainPresenter: MainPresentLogic {
 }
 
 protocol MainPresentLogic {
-    func showSuccessFetchedRandomPhoto()
+    func showSuccessFetchedRandomPhoto(_ obeservable: Observable<Photo>)
     func showFailureFetchedRandomPhoto()
 }
