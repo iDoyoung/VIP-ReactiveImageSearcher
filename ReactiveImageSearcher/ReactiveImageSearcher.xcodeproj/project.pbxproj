@@ -113,32 +113,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7F7892D82861E27800308164 /* Utility */ = {
+		7F7892D82861E27800308164 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
 				7F7892D92861E38200308164 /* Namespace.swift */,
 				7FC159772868611600D782A8 /* CashManager.swift */,
 				7FC159792868616E00D782A8 /* UIImageView+LoadImage.swift */,
 			);
-			path = Utility;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		7F7892DB2862DEFC00308164 /* Scene */ = {
+		7F7892DB2862DEFC00308164 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				7FA2A0542840D7EC00413275 /* Main.storyboard */,
 				7FA2A0522840D7EC00413275 /* MainViewController.swift */,
 				7F7892DC2862DFB500308164 /* MainInteractor.swift */,
 				7FC1596C2866F2D500D782A8 /* MainPresenter.swift */,
 			);
-			path = Scene;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		7FA04EE2284CA02A0040C8E6 /* Model */ = {
+		7FA04EE2284CA02A0040C8E6 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				7FA04EE3284CA0A10040C8E6 /* Photo.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		7FA04EE5284CD12C0040C8E6 /* Worker */ = {
@@ -173,17 +174,9 @@
 		7FA2A04D2840D7EC00413275 /* ReactiveImageSearcher */ = {
 			isa = PBXGroup;
 			children = (
-				7F7892DB2862DEFC00308164 /* Scene */,
-				7F7892D82861E27800308164 /* Utility */,
-				7FA04EE5284CD12C0040C8E6 /* Worker */,
-				7FA04EE2284CA02A0040C8E6 /* Model */,
-				7FA2A0FA2840F33900413275 /* Network */,
-				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
-				7FA2A0502840D7EC00413275 /* SceneDelegate.swift */,
-				7FA2A0542840D7EC00413275 /* Main.storyboard */,
+				7FD99242286F0E4500BC3FE4 /* Supportings */,
+				7FD99241286F0E0900BC3FE4 /* Sources */,
 				7FA2A0572840D7ED00413275 /* Assets.xcassets */,
-				7FA2A0592840D7ED00413275 /* LaunchScreen.storyboard */,
-				7FA2A05C2840D7ED00413275 /* Info.plist */,
 			);
 			path = ReactiveImageSearcher;
 			sourceTree = "<group>";
@@ -229,6 +222,37 @@
 				7FC1596F2867F0EF00D782A8 /* MainPresenterTests.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		7FD99240286F0DF300BC3FE4 /* Entries */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2A04E2840D7EC00413275 /* AppDelegate.swift */,
+				7FA2A0502840D7EC00413275 /* SceneDelegate.swift */,
+			);
+			path = Entries;
+			sourceTree = "<group>";
+		};
+		7FD99241286F0E0900BC3FE4 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FD99240286F0DF300BC3FE4 /* Entries */,
+				7FA04EE2284CA02A0040C8E6 /* Models */,
+				7FA2A0FA2840F33900413275 /* Network */,
+				7FA04EE5284CD12C0040C8E6 /* Worker */,
+				7F7892DB2862DEFC00308164 /* Scenes */,
+				7F7892D82861E27800308164 /* Utilities */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7FD99242286F0E4500BC3FE4 /* Supportings */ = {
+			isa = PBXGroup;
+			children = (
+				7FA2A05C2840D7ED00413275 /* Info.plist */,
+				7FA2A0592840D7ED00413275 /* LaunchScreen.storyboard */,
+			);
+			path = Supportings;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -563,7 +587,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XVAQ6DRC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReactiveImageSearcher/Info.plist;
+				INFOPLIST_FILE = ReactiveImageSearcher/Supportings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -591,7 +615,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3XVAQ6DRC4;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ReactiveImageSearcher/Info.plist;
+				INFOPLIST_FILE = ReactiveImageSearcher/Supportings/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
