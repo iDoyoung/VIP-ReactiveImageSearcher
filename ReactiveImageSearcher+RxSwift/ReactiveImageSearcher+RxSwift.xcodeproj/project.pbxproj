@@ -17,7 +17,6 @@
 		7FA2A0922840D9F800413275 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA2A0902840D9F800413275 /* Main.storyboard */; };
 		7FA2A0942840D9F900413275 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FA2A0932840D9F900413275 /* Assets.xcassets */; };
 		7FA2A0972840D9F900413275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7FA2A0952840D9F900413275 /* LaunchScreen.storyboard */; };
-		7FA2A0A22840D9F900413275 /* ReactiveImageSearcher_RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0A12840D9F900413275 /* ReactiveImageSearcher_RxSwiftTests.swift */; };
 		7FA2A0AC2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0AB2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITests.swift */; };
 		7FA2A0AE2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FA2A0AD2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift */; };
 		7FC1597D286A98E200D782A8 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FC1597C286A98E200D782A8 /* Endpoint.swift */; };
@@ -72,7 +71,6 @@
 		7FA2A0962840D9F900413275 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7FA2A0982840D9F900413275 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FA2A09D2840D9F900413275 /* ReactiveImageSearcher+RxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveImageSearcher+RxSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7FA2A0A12840D9F900413275 /* ReactiveImageSearcher_RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcher_RxSwiftTests.swift; sourceTree = "<group>"; };
 		7FA2A0A72840D9F900413275 /* ReactiveImageSearcher+RxSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ReactiveImageSearcher+RxSwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FA2A0AB2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcher_RxSwiftUITests.swift; sourceTree = "<group>"; };
 		7FA2A0AD2840D9F900413275 /* ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactiveImageSearcher_RxSwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -177,13 +175,10 @@
 		7FA2A0A02840D9F900413275 /* ReactiveImageSearcher+RxSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
-				7FA2A0A12840D9F900413275 /* ReactiveImageSearcher_RxSwiftTests.swift */,
+				7FC1599F286DEA1200D782A8 /* Seeds.swift */,
 				7FC15982286C8D0500D782A8 /* NetworkServiceTests.swift */,
 				7FC1599D286D85A100D782A8 /* PhotoWorkerTests.swift */,
-				7FC1599F286DEA1200D782A8 /* Seeds.swift */,
-				7FF6ADE8286ECC5D00DF9559 /* MainInteractorTests.swift */,
-				7FF0E299286EDFD1007E8F64 /* MainPresenterTests.swift */,
-				7FF0E29B286EE57D007E8F64 /* MainViewcontrollerTests.swift */,
+				7FD99243286F0F9100BC3FE4 /* Main */,
 			);
 			path = "ReactiveImageSearcher+RxSwiftTests";
 			sourceTree = "<group>";
@@ -244,6 +239,16 @@
 				7FC15995286D809900D782A8 /* UIImageView+LoadImage.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		7FD99243286F0F9100BC3FE4 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				7FF6ADE8286ECC5D00DF9559 /* MainInteractorTests.swift */,
+				7FF0E299286EDFD1007E8F64 /* MainPresenterTests.swift */,
+				7FF0E29B286EE57D007E8F64 /* MainViewcontrollerTests.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		7FF0E29D286EF9C4007E8F64 /* Sources */ = {
@@ -572,7 +577,6 @@
 				7FC159A0286DEA1200D782A8 /* Seeds.swift in Sources */,
 				7FF0E29A286EDFD1007E8F64 /* MainPresenterTests.swift in Sources */,
 				7FF6ADE9286ECC5D00DF9559 /* MainInteractorTests.swift in Sources */,
-				7FA2A0A22840D9F900413275 /* ReactiveImageSearcher_RxSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

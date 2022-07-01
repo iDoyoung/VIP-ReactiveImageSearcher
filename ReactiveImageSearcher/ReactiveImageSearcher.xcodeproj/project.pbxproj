@@ -184,10 +184,10 @@
 		7FA2A0642840D7ED00413275 /* ReactiveImageSearcherTests */ = {
 			isa = PBXGroup;
 			children = (
+				7F7892E028655A8700308164 /* Seeds.swift */,
 				7FA2A0652840D7ED00413275 /* NetworkServiceTests.swift */,
 				7FA04EEA284DA6940040C8E6 /* DataTransferServiceTests.swift */,
 				7F7892DE28643A9400308164 /* PhotoWorkerTests.swift */,
-				7F7892E028655A8700308164 /* Seeds.swift */,
 				7FC1596E2867F07300D782A8 /* Main */,
 			);
 			path = ReactiveImageSearcherTests;
