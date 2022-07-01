@@ -41,7 +41,7 @@ class MainInteractorTests: XCTestCase {
         var showSuccessFetchedRandomPhotoCalled = false
         var showFailureFetchedRandomPhotoCalled = false
         
-        func showSuccessFetchedRandomPhoto(_ obeservable: Observable<Photo>) {
+        func showSuccessFetchedRandomPhoto(_ photo: Photo) {
             showSuccessFetchedRandomPhotoCalled = true
         }
         
