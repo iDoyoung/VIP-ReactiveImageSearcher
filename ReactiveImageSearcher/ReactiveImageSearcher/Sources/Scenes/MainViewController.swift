@@ -11,7 +11,18 @@ class MainViewController: UIViewController {
 
     var interactor: MainBusinessLogic?
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.isUserInteractionEnabled = true
+            imageView.addGestureRecognizer(imageTapGesture)
+        }
+    }
+    
+    @IBOutlet var imageTapGesture: UITapGestureRecognizer!
+    
+    @IBAction func chageImage(_ sender: UITapGestureRecognizer) {
+        fetchRandomPhoto()
+    }
     
     //MARK: - Life cycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {

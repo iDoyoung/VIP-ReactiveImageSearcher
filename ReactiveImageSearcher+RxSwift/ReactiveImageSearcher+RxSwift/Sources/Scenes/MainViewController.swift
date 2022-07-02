@@ -6,12 +6,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class MainViewController: UIViewController {
 
+    var disposeBag = DisposeBag()
     var interactor: MainBusinessLogic?
+
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            imageView.isUserInteractionEnabled = true
+            imageView.addGestureRecognizer(imageTapGesture)
+        }
+    }
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet var imageTapGesture: UITapGestureRecognizer!
+    
     
     //MARK: - VC Life cycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -26,6 +37,9 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageTapGesture.rx.event.bind { [weak self] _ in
+            self?.fetchRandomPhoto()
+        }.disposed(by: disposeBag)
     }
 
     override func viewWillAppear(_ animated: Bool) {
