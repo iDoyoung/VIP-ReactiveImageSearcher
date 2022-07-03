@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import ReactiveImageSearcher
+@testable import UnReactiveImageSearcher
 
 class MainViewControllerTests: XCTestCase {
 
